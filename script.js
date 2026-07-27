@@ -40,7 +40,7 @@ const piezas = [
   { archivo: "Video17-cruz-h.mp4", tipo: "video", forma: "horizontal" },
   { archivo: "Video22-fingers-v.mp4", tipo: "video", forma: "vertical" },
   { archivo: "obracabeza1-h.jpg", tipo: "imagen", forma: "horizontal" },
-  { archivo: "michaelclark-h.jpg", tipo: "imagen", forma: "horizontal-80" },
+  { archivo: "michaelClark-h.jpg", tipo: "imagen", forma: "horizontal-80" },
   { archivo: "Video23-ojo-v.mp4", tipo: "video", forma: "vertical" },
 
   { archivo: "Video21-lavabo-h.mp4", tipo: "video", forma: "horizontal" },
