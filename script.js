@@ -84,6 +84,8 @@ piezas.forEach(function (pieza) {
 const videos = document.querySelectorAll(".bloque video");
 
 videos.forEach(function (video) {
+  video.setAttribute("playsinline", "");
+  video.setAttribute("preload", "metadata");
   video.addEventListener("mouseenter", function () {
     video.muted = false;
     video.play();
