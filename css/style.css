@@ -1,0 +1,224 @@
+.intro {
+  background: #A32D2D;
+  padding: 8px 16px;
+  margin: 0 0 10px 10px;
+  max-width: 600px;
+}
+
+.intro p {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+}
+
+body {
+  cursor: none;
+}
+
+.cursor-custom {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: #8B5CF6;
+  border-radius: 50%;
+  filter: blur(4px);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 48px;
+  margin: 30px;
+}
+
+.subtitulo {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px 0 40;
+}
+
+footer {
+  padding-left: 20px;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 10px;
+  grid-auto-flow: dense;
+  gap: 12px;
+  margin-left: 40px;
+}
+
+.bloque {
+  transition: transform 0.3s ease;
+}
+
+.horizontal-gde {
+  grid-column: span 6;
+  grid-row: span 14;
+}
+
+.vertical {
+  grid-column: span 2;
+  grid-row: span 12;
+}
+
+.cuadrado {
+  grid-column: span 3;
+  grid-row: span 10;
+}
+
+.horizontal {
+  grid-column: span 4;
+  grid-row: span 10;
+}
+
+.horizontal-80 {
+  grid-column: span 5;
+  grid-row: span 12;
+}
+
+.bloque:hover {
+  transform: scale(1.1);
+}
+
+.bloque img,
+.bloque video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .collage {
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 20px;
+  }
+
+  .horizontal-gde {
+    grid-column: span 6;
+    grid-row: span 24;
+  }
+
+  .horizontal-80 {
+    grid-column: span 5;
+    grid-row: span 20;
+  }
+
+  .horizontal {
+    grid-column: span 4;
+    grid-row: span 16;
+  }
+
+  .cuadrado {
+    grid-column: span 3;
+    grid-row: span 20;
+  }
+
+  .vertical {
+    grid-column: span 3;
+    grid-row: span 16;
+  }
+}
+
+@media (max-width: 600px) {
+  .collage {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 12px;
+  }
+
+  .horizontal-gde {
+    grid-column: span 4;
+    grid-row: span 18;
+  }
+
+  .horizontal-80 {
+    grid-column: span 4;
+    grid-row: span 16;
+  }
+
+  .horizontal {
+    grid-column: span 3;
+    grid-row: span 12;
+  }
+
+  .cuadrado {
+    grid-column: span 2;
+    grid-row: span 16;
+  }
+
+  .vertical {
+    grid-column: span 2;
+    grid-row: span 14;
+  }
+}
+
+@media (max-width: 900px) {
+  .cursor-custom {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
+.pregunta-abierta {
+  margin: 40px 0;
+  padding-left: 40px;
+}
+
+.pregunta-abierta input {
+  font-family: "Cormorant", serif;
+  font-size: 18px;
+  padding: 8px 12px;
+  border: 1px solid #5F5E5A;
+  margin-right: 8px;
+}
+
+.pregunta-abierta button {
+  font-family: "Cormorant SC", serif;
+  background: #744ac9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#mensajeConfirmacion {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  margin-top: 12px;
+  color: #6590e5;
+}
+
+.boton-arriba {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #5F5E5A;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-family: "Cormorant SC", serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 20px 0 20px 40px;
+}
+
+.boton-arriba:hover {
+  background: #A32D2D;
+}
+
+.boton-arriba i {
+  font-size: 12px;
+}
